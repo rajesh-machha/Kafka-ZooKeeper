@@ -198,6 +198,7 @@ A: yes. This is for testing only!!! Reduce the KAFKA_LOG_SEGMENT_BYTES to 16MB a
 
 ```
   kafka1:
+
     image: confluentinc/cp-kafka:6.2.1
     ...
     environment:
@@ -215,7 +216,6 @@ For example, if the IP of your machine is `50.10.2.3`, follow the sample mapping
 ```
   kafka1:
     image: confluentinc/cp-kafka:6.2.1
-    ...
     environment:
       ...
       KAFKA_ADVERTISED_LISTENERS: LISTENER_DOCKER_INTERNAL://kafka2:19093,LISTENER_DOCKER_EXTERNAL://50.10.2.3:9093
